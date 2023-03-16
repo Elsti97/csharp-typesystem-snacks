@@ -6,8 +6,8 @@
 //snack6();
 //snack7();
 //snack8();
-snack9();
-//snack10();
+//snack9();
+snack10();
 //snack11();
 //snack12();
 
@@ -198,6 +198,28 @@ void snack9()
 void snack10()
 {
 
+    Console.WriteLine("Inserisci un numero: ");
+
+    int N = Convert.ToInt32(Console.ReadLine());
+
+    var random = new Random();
+
+    for (int i = 0; i < N; i++)
+    {
+        int[] array = new int[10];
+
+        for (int j = 0; j < array.Length; j++)
+        {
+            array[j] = random.Next(0, 100);
+        }
+
+        foreach (var num in array)
+        {
+            Console.Write($"{num} ");
+        }
+
+        Console.WriteLine();
+    }
 }
 
 
