@@ -5,8 +5,8 @@
 //snack5();
 //snack6();
 //snack7();
-snack8();
-//snack9();
+//snack8();
+snack9();
 //snack10();
 //snack11();
 //snack12();
@@ -163,8 +163,36 @@ void snack8()
 
 void snack9()
 {
+    int[] numArray = new int[0];
+    int sum = 0;
 
+    while (sum < 50)
+    {
+        Console.WriteLine("Inserisci un numero: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        int[] newArray = new int[numArray.Length + 1];
+
+        for (int i = 0; i < numArray.Length; i++)
+        {
+            newArray[i] = numArray[i];
+        }
+
+        newArray[numArray.Length] = num;
+
+        numArray = newArray;
+
+        sum = 0;
+
+        for (int i = 0; i < numArray.Length; i++)
+        {
+            sum += numArray[i];
+        }
+    }
+
+    Console.WriteLine("La somma ha raggiunto 50, il risultato è: " + sum);
 }
+
 
 
 void snack10()
