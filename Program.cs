@@ -7,8 +7,8 @@
 //snack7();
 //snack8();
 //snack9();
-snack10();
-//snack11();
+//snack10();
+snack11();
 //snack12();
 
 void snack1()
@@ -225,7 +225,21 @@ void snack10()
 
 void snack11()
 {
+    Console.Write("Inserisci la prima parola: ");
+    string str1 = Console.ReadLine() ?? "";
 
+    Console.Write("Inserisci la seconda parola: ");
+    string str2 = Console.ReadLine() ?? "";
+
+    if (str1.Length == str2.Length)
+    {
+        Console.WriteLine("Le due parole sono entrambe lunghe " + str1.Length + " caratteri e sono: " + str1 + " e " + str2);
+    }
+    else
+    {
+        string longer = str1.Length > str2.Length ? str1 : str2;
+        Console.WriteLine("La parola più lunga è: " + longer);
+    }
 }
 
 
