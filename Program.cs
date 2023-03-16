@@ -4,8 +4,8 @@
 //snack4();
 //snack5();
 //snack6();
-snack7();
-//snack8();
+//snack7();
+snack8();
 //snack9();
 //snack10();
 //snack11();
@@ -149,7 +149,15 @@ void snack7()
 
 void snack8()
 {
+    int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+    int oddSum = 0;
 
+    for (int i = 1; i < nums.Length; i += 2)
+    {
+        oddSum += nums[i];
+    }
+
+    Console.WriteLine("La somma dei numeri in posizione dispari è: " + oddSum);
 }
 
 
