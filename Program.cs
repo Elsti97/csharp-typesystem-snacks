@@ -2,8 +2,8 @@
 //snack2();
 //snack3();
 //snack4();
-snack5();
-//snack6();
+//snack5();
+snack6();
 //snack7();
 //snack8();
 //snack9();
@@ -94,4 +94,58 @@ void snack5()
     {
         Console.WriteLine("Il numero inserito è dispari, ecco il numero pari subito dopo: " + (num + 1));
     }
+}
+
+
+void snack6()
+{
+    string[] guestList = { "Aldo", "Giovanni", "Giacomo", "Parrego", "Nagasella", "Nagheso", "Pasaghella", "Parrassanna", "Franco" };
+
+    Console.Write("Inserisci il tuo nome: ");
+    string name = Console.ReadLine() ?? "";
+
+    if (guestList.Contains(name, StringComparer.OrdinalIgnoreCase))
+    {
+        Console.WriteLine("Puoi partecipare alla festa del grande Gasby");
+    }
+    else
+    {
+        Console.WriteLine("Non sei stato invitato");
+    }
+}
+
+
+void snack7()
+{
+
+}
+
+
+void snack8()
+{
+
+}
+
+
+void snack9()
+{
+
+}
+
+
+void snack10()
+{
+
+}
+
+
+void snack11()
+{
+
+}
+
+
+void snack12()
+{
+
 }
