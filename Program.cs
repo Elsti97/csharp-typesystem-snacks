@@ -1,9 +1,15 @@
 ﻿//snack1();
 //snack2();
 //snack3();
-using System.Globalization;
-
-snack4();
+//snack4();
+snack5();
+//snack6();
+//snack7();
+//snack8();
+//snack9();
+//snack10();
+//snack11();
+//snack12();
 
 void snack1()
 { 
@@ -72,4 +78,20 @@ void snack4()
     double avg = sum / nums;
     Console.WriteLine("La somma è: " + sum);
     Console.WriteLine("La media è: " + avg);
+}
+
+
+void snack5()
+{
+    Console.Write("Inserisci un numero: ");
+    int num = Convert.ToInt32(Console.ReadLine());
+
+    if (num % 2 == 0)
+    {
+        Console.WriteLine("Il numero inserito è pari: " + num);
+    }
+    else
+    {
+        Console.WriteLine("Il numero inserito è dispari, ecco il numero pari subito dopo: " + (num + 1));
+    }
 }
