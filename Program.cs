@@ -3,8 +3,8 @@
 //snack3();
 //snack4();
 //snack5();
-snack6();
-//snack7();
+//snack6();
+snack7();
 //snack8();
 //snack9();
 //snack10();
@@ -117,7 +117,33 @@ void snack6()
 
 void snack7()
 {
+    int[] oddArray = new int[0];
 
+    for (int i = 0; i < 6; i++)
+    {
+        Console.WriteLine("Inserisci un numero: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        if (num % 2 != 0)
+        {
+            int[] newArray = new int[oddArray.Length + 1];
+
+            for (int j = 0; j < oddArray.Length; j++)
+            {
+                newArray[j] = oddArray[j];
+            }
+
+            newArray[oddArray.Length] = num;
+
+            oddArray = newArray;
+        }
+    }
+
+    Console.WriteLine("Numeri dispari inseriti:");
+    foreach (int odd in oddArray)
+    {
+        Console.Write(odd + " ");
+    }
 }
 
 
