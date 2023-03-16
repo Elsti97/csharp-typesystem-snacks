@@ -323,20 +323,44 @@ void snack11()
 }
 
 
+//void snack12()
+//{
+//    Console.WriteLine("12)Scrivi un numero, ti dirò se è pari o dispari");
+//    Console.Write("Inserisci un numero: ");
+//    int num = Convert.ToInt32(Console.ReadLine());
+
+//    if (num % 2 == 0)
+//    {
+//        Console.WriteLine(num + " è un numero pari");
+//    }
+//    else
+//    {
+//        Console.WriteLine(num + " è un numero dispari");
+//    }
+//    Console.WriteLine();
+//}
+
 void snack12()
 {
     Console.WriteLine("12)Scrivi un numero, ti dirò se è pari o dispari");
     Console.Write("Inserisci un numero: ");
     int num = Convert.ToInt32(Console.ReadLine());
 
+
+    Console.WriteLine(oddEffect(num));
+
+    Console.WriteLine();
+}
+
+string oddEffect(int num)
+{
     if (num % 2 == 0)
     {
-        Console.WriteLine(num + " è un numero pari");
+        return num + " è un numero pari";
     }
     else
     {
-        Console.WriteLine(num + " è un numero dispari");
+        return num + " è un numero dispari";
     }
-    Console.WriteLine();
 }
 
