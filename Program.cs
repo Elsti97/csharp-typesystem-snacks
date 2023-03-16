@@ -1,6 +1,9 @@
 ﻿//snack1();
 //snack2();
-snack3();
+//snack3();
+using System.Globalization;
+
+snack4();
 
 void snack1()
 { 
@@ -51,4 +54,22 @@ void snack3()
         sum += num;
     }
     Console.WriteLine("La somma totale è: " + sum);
+}
+
+
+void snack4()
+{
+    int sum = 0;
+    int min = 2;
+    int max = 10;
+    int nums = 0;
+
+    for (int i = min; i <= max; i++)
+    {
+        sum += i;
+        nums++;
+    }
+    double avg = sum / nums;
+    Console.WriteLine("La somma è: " + sum);
+    Console.WriteLine("La media è: " + avg);
 }
