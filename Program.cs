@@ -54,18 +54,6 @@ while (!exit)
     }
 }
 
-//snack1();
-//snack2();
-//snack3();
-//snack4();
-//snack5();
-//snack6();
-//snack7();
-//snack8();
-//snack9();
-//snack10();
-//snack11();
-//snack12();
 
 void snack1()
 {
@@ -323,22 +311,10 @@ void snack11()
 }
 
 
-//void snack12()
-//{
-//    Console.WriteLine("12)Scrivi un numero, ti dirò se è pari o dispari");
-//    Console.Write("Inserisci un numero: ");
-//    int num = Convert.ToInt32(Console.ReadLine());
-
-//    if (num % 2 == 0)
-//    {
-//        Console.WriteLine(num + " è un numero pari");
-//    }
-//    else
-//    {
-//        Console.WriteLine(num + " è un numero dispari");
-//    }
-//    Console.WriteLine();
-//}
+bool isEven(int num)
+{
+    return num % 2 == 0;
+}
 
 void snack12()
 {
@@ -346,21 +322,8 @@ void snack12()
     Console.Write("Inserisci un numero: ");
     int num = Convert.ToInt32(Console.ReadLine());
 
-
-    Console.WriteLine(oddEffect(num));
+    Console.WriteLine($"Il numero inserito è: {(isEven(num) ? "pari" : "dispari")}");
 
     Console.WriteLine();
-}
-
-string oddEffect(int num)
-{
-    if (num % 2 == 0)
-    {
-        return num + " è un numero pari";
-    }
-    else
-    {
-        return num + " è un numero dispari";
-    }
 }
 
